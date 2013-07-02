@@ -1,0 +1,294 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #111;
+  font-family: 'Ubuntu', cursive;
+}
+
+div#header {
+  background-image: url('/resources/top.png');
+  font-size: 50px;
+  height: 70px;
+  text-align: center;
+  padding-top: 10px;
+  color: #ccc;
+}
+
+#header .title {
+  font-family: 'Nova Square', cursive;
+}
+
+#header .links {
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+}
+
+div#header a:link {
+  text-decoration: none;
+  color: #ccc;
+}
+
+div#header a:visited {
+  color: #ccc;
+}
+
+div#header a:hover {
+  color: #eee;
+}
+
+div#body {
+  margin: 10px 50px;
+}
+
+div.graph-container {
+  background-color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+div.graph-container table tr td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.graph-container table .highlight {
+  font-weight: bold;
+  width: 40%;
+  font-size: 20px;
+}
+
+div.graph-container table .detail {
+  width: 60%;
+}
+
+.graph {
+  margin-top: 5px;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 20px;
+  width: 100%;
+}
+
+table thead tr td {
+  border-bottom: solid 1px #ccc;
+}
+
+h1 {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+  background-color: #555;
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+  color: #ccc;
+}
+
+h3 {
+  background-color: #555;
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+  color: #ccc;
+  margin: 0;
+}
+
+.list-container {
+  margin-top: 5px;
+}
+
+.list {
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  width: 49.5%;
+}
+
+#list2 {
+  margin-left: .6%;
+}
+
+.list a:link {
+  text-decoration: none;
+}
+
+.list a:visited {
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+.list table thead {
+  font-weight: bold;
+}
+
+.list tr td.name {
+  width: 50%;
+  padding-left: 10px;
+}
+
+.list table td.number {
+  text-align: right;
+}
+
+.list img.country{
+  height: 15px;
+}
+
+table td {
+  padding: 3px;
+}
+
+.race-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  font-weight: bolder;
+  padding: 1px;
+}
+
+.race-icon.z {
+  background-color: #F2B8B8;
+}
+
+.race-icon.t {
+  background-color: #B8B8F2;
+}
+
+.race-icon.p {
+  background-color: #B8F2B8;
+}
+
+.more-link {
+  font-size: 15px;
+  float: right;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.highcharts-container {
+  height: auto !important;
+}
+
+img.loading {
+  border-radius: 15px;
+}
+
+.odd {
+  background-color: #ccc;
+}
+
+#about {
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  clear: both;
+}
+
+#about .cc {
+  float: right;
+}
+
+.loading {
+  margin: auto;
+  display: block;
+}
+
+#links {
+  margin-bottom: 15px;
+}
+
+.RaceT, .RaceZ, .RaceP {
+  display: inline-block;
+  width: 15px;
+  padding: 2px;
+  border-radius: 3px;
+  border: solid 2px rgb(.71,.71,.71);
+}
+.RaceT {
+  background-color: #d81417;
+}
+.RaceZ {
+  background-color: #0099FF;
+}
+.RaceP {
+  background-color: #2a9c3b;
+}
+
+.big-container {
+  width: 48%;
+  float: left;
+  margin-left: 2%;
+}
+
+.big-table {
+  background-color: white;
+}
+
+.big-table thead td {
+  border-bottom: solid 3px #333;
+}
+
+.big-table .number {
+  text-align: right;
+}
+
+.big-table .links {
+  width: 100px;
+  text-align: center;
+}
+
+.multi-col-header {
+  text-align: center;
+}
+
+.note {
+  color: #666;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+table a:link {
+  color:black;
+}
+table a:hover {
+  color:rgb(255, 153, 0);
+}
+table a:visited{
+  color:#333;
+}
+
+#share {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 153, 0);
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.big-title {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .list {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .big-container {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+}
