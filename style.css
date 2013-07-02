@@ -106,14 +106,17 @@ h3 {
   border-radius: 10px;
   background-color: white;
   display: inline-block;
-  width: 49.5%;
+  margin: 0;
+  padding: 0;
+  width: calc(50% - 5px);
+  border: none;
 }
 
 #list2 {
-  margin-left: .6%;
+  margin-left: 5px;
 }
 
-.list a:link {
+a:link {
   text-decoration: none;
 }
 
@@ -137,7 +140,7 @@ h3 {
   text-align: right;
 }
 
-.list img.country{
+img.country{
   height: 15px;
 }
 
@@ -207,16 +210,16 @@ img.loading {
 
 .RaceT, .RaceZ, .RaceP {
   display: inline-block;
-  width: 15px;
-  padding: 2px;
   border-radius: 3px;
-  border: solid 2px rgb(.71,.71,.71);
+  text-align: center;
+  padding: 0 10px;
+  border: solid 2px #333;
 }
 .RaceT {
-  background-color: #d81417;
+  background-color: #0099FF;
 }
 .RaceZ {
-  background-color: #0099FF;
+  background-color: #d81417;
 }
 .RaceP {
   background-color: #2a9c3b;
@@ -241,7 +244,7 @@ img.loading {
 }
 
 .big-table .links {
-  width: 100px;
+  width: 50px;
   text-align: center;
 }
 
@@ -264,6 +267,12 @@ table a:hover {
 }
 table a:visited{
   color:#333;
+}
+
+.break-row {
+  color: #666;
+  font-size: 12px;
+  text-align: center;
 }
 
 #share {

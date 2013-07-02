@@ -9,6 +9,7 @@ $data_json = curl_exec($curl);
 $data = json_decode($data_json, true);
 $odd = true;
 ?>
+<!DOCTYPE html>
 <html>
   <head>
     <?php include '_header.php'; ?>
@@ -30,9 +31,16 @@ $odd = true;
           </tr>
         </thead>
         <tbody>
+      <?php $no_break = true; ?>
       <?php foreach(array_slice($data['players'], 0, $listSize) as $player) { ?>
+        <?php if($no_break and (intval($player['wins']) + intval($player['loss']) < 10)) { ?>
+          <tr><td class="break-row" colspan="5">Players below have played fewer than ten games against Koreans</td></tr>
+        <?php 
+          $no_break = false;
+          } 
+        ?>
           <tr class="<?php print $odd ? "odd" : "even"; $odd = !$odd; ?>" >
-            <td><img src="/resources/<?php print strtolower($player['country']); ?>.png" /> <span class="Race<?php print $player['rc']; ?>"><?php print $player['rc']; ?></span> <?php print $player['tag']; ?></td>
+            <td><span class="Race<?php print $player['rc']; ?>"><?php print $player['rc']; ?></span> <img class="country" src="/resources/<?php print strtolower($player['country']); ?>.png" /> <?php print $player['tag']; ?></td>
             <td class="number"><?php print $player['wins']; ?></td>
             <td class="number"><?php print $player['loss']; ?></td>
             <td class="number"><?php if($player['loss'] > 0) { print number_format($player['wins'] / $player['loss'], 2); } ?></td>
@@ -69,9 +77,16 @@ $odd = true;
           </tr>
         </thead>
         <tbody>
+      <?php $no_break = true; ?>
       <?php foreach(array_slice($data['players'], 0, $listSize) as $player) { ?>
+        <?php if($no_break and (intval($player['wins']) + intval($player['loss']) < 10)) { ?>
+          <tr><td class="break-row" colspan="5">Players below have played fewer than ten games against Koreans</td></tr>
+        <?php 
+          $no_break = false;
+        } 
+        ?>
           <tr class="<?php print $odd ? "odd" : "even"; $odd = !$odd; ?>" >
-            <td><img src="/resources/<?php print strtolower($player['country']); ?>.png" /> <span class="Race<?php print $player['rc']; ?>"><?php print $player['rc']; ?></span> <?php print $player['tag']; ?></td>
+            <td><span class="Race<?php print $player['rc']; ?>"><?php print $player['rc']; ?></span> <img class="country" src="/resources/<?php print strtolower($player['country']); ?>.png" /> <?php print $player['tag']; ?></td>
             <td class="number"><?php print $player['wins']; ?></td>
             <td class="number"><?php print $player['loss']; ?></td>
             <td class="number"><?php if($player['loss'] > 0) { print number_format($player['wins'] / $player['loss'], 2); } ?></td>

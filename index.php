@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <?php include '_header.php'; ?>
@@ -52,12 +53,12 @@
         <div class="list" id="list2"><img class="loading" src="resources/loading.gif" /></div>
       </div>
     </div>
-    <div id="about">About: I love Starcraft and had a few minutes spare. <span class="cc">&copy <a href="http://www.zacherytillotson.com">Zack Tillotson</a> - <a href="mailto:StarcraftTrends@gmail.com">Suggestions for Stats?</a></span></div>
+    <div id="about">About: I love Starcraft and had a few minutes spare. <span class="cc">&copy <a href="http://www.zacherytillotson.com">Zack Tillotson</a> - <a href="mailto:StarcraftTrends@gmail.com">Suggestions? Questions?</a></span></div>
     <script type="text/javascript">
-      makeGraphRaceOverTime('graph1', 'Race Win Rates', '3 Week Moving Average, Source: <a href="http://aligulac.com">Aligulac.com</a>', "http://www.starcrafttrends.com/data/aligulac/hots_race_wins.json.php");
+      makeGraphRaceOverTime('graph1', 'Race Win Rates', '3 Week Moving Average, Source: <a href="http://aligulac.com">Aligulac.com</a>', "http://www.starcrafttrends.com/data/aligulac/hots_race_wins.json.php", false);
       setTimeout(function(){$('#list1').load('frvskrPlayerList.php');}, 100);
       setTimeout(function(){$('#list2').load('krvskrPlayerList.php');}, 150);
-      makeGraphRaceOverTime('graph3', 'Non Koreans vs Korean Opponents Win Rates', '3 Week Moving Average, Source: <a href="http://aligulac.com">Aligulac.com</a>', "http://www.starcrafttrends.com/data/aligulac/hots_kr_race_wins.json.php");
+      makeGraphRaceOverTime('graph3', 'Non Koreans vs Korean Opponents Win Rates', '3 Week Moving Average, Source: <a href="http://aligulac.com">Aligulac.com</a>', "http://www.starcrafttrends.com/data/aligulac/hots_kr_race_wins.json.php", true);
     </script>
   </body>
 </html
