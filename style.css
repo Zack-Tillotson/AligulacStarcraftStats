@@ -62,6 +62,13 @@ div.graph-container table .detail {
   width: 60%;
 }
 
+div.graph-container a:link,  div.graph-container a:visited {
+  color:rgb(255, 153, 0);
+}
+
+div.graph-container a:hover {
+  text-decoration: underline;
+}
 .graph {
   margin-top: 5px;
   width: 100%;
@@ -226,8 +233,11 @@ img.loading {
 }
 
 .big-container {
-  width: 48%;
+  width: 49%;
   float: left;
+}
+
+.big-container.right {
   margin-left: 2%;
 }
 
@@ -289,6 +299,78 @@ table a:visited{
   margin-bottom: 0;
 }
 
+.page-links {
+}
+
+.page-links h2 {
+  margin-bottom: 0;
+}
+
+.page-links a {
+  display: inline-block;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.page-links a:link, .page-links a:visited {
+  color: black;
+}
+
+.page-links a:hover {
+  color: rgb(255, 153, 0);
+}
+
+.results-set {
+  background-color: white;
+  width: calc(50% - 2px);
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  margin-top: 5px;
+}
+
+.results-set h3 .date {
+  float: right;
+  font-size: 12px;
+}
+
+.results-set thead td {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  border: none;
+}
+
+.results-set table thead tr:last-child {
+  border-bottom: solid 1px #333;
+}
+.results-set tbody td {
+  border-bottom: solid 1px #ccc;
+  text-align: center;
+}
+
+.results-set tbody td.name {
+  text-align: left;
+  width: 40%;
+}
+
+.results-set tbody tr td.result-pos {
+  background-color: rgb(165, 255, 169);
+}
+
+.results-set tbody tr td.result-neg {
+  background-color: rgb(255, 165, 165) !important;
+}
+
+.results-set tbody tr.predict-advance td.prediction {
+  background-color: rgba(255, 173, 0, 0.42);
+}
+
+.results-set tbody tr.predict-dq td {
+  background-color: #ccc;
+}
+
 @media screen and (max-width: 1100px) {
   .list {
     width: 100%;
@@ -299,5 +381,14 @@ table a:visited{
     width: 100%;
     display: block;
     float: none;
+  }
+
+  .big-container.right {
+    margin: 0;
+  }
+
+  .results-set {
+    width: 100%;
+    max-width: none;
   }
 }

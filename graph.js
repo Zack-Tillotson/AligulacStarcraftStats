@@ -69,5 +69,7 @@ function makeGraphRaceOverTime(container, chartName, chartSubtitle, dataUrl, ful
     chart.xAxis[0].addPlotLine({value: $.inArray("2013-06-17", data.whens), id: 'dhsum', width: 2, color: '#2a9c3b', label: {text: "DreamHack Summer", style: {color: "#999"}}});
     chart.xAxis[0].addPlotLine({value: $.inArray("2013-06-17", data.whens)+.5, id: 'hsc7', width: 2, color: '#0099FF', label: {text: "HomeStory Cup VII", style: {color: "#999"}}});
     chart.xAxis[0].addPlotLine({value: $.inArray("2013-06-24", data.whens)+.7, id: 'mlgspring', width: 2, color: '#0099FF', label: {text: "MLG Spring Championship", style: {color: "#999"}}});
+    chart.xAxis[0].addPlotLine({value: $.inArray("2013-07-15", data.whens), id: 'dhvalencia', width: 2, color: '#d81417', label: {text: "DreamHack Valencia", style: {color: "#999"}}});
+    chart.xAxis[0].addPlotLine({value: $.inArray("2013-08-05", data.whens), id: 'rog13summer', width: 2, color: '#0099ff', label: {text: "ASUS ROG Summer", style: {color: "#999"}}});
   });
 }
